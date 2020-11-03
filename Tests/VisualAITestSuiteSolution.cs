@@ -34,7 +34,7 @@ namespace CS_Applitools
         public void TestSetup()
         {
             driver = new ChromeDriver();
-            Console.WriteLine(Environment.GetEnvironmentVariable("isOriginalApp"));
+            
             driver.Navigate().GoToUrl(OriginalAppURL);
             //driver.Navigate().GoToUrl(NewAppURL);
            
