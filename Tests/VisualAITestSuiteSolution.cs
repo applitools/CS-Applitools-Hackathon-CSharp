@@ -67,7 +67,7 @@ namespace CS_Applitools
         }
 
         [Test]
-        [TestCase(TestName = "Validate Images"), Order(2)]
+        [TestCase(TestName = "Username and Password Must be Present"), Order(2)]
         public void usernameAndPasswordMustPresentTest()
         {
             SubmitForm();
@@ -75,7 +75,7 @@ namespace CS_Applitools
         }
 
         [Test]
-        [TestCase(TestName = "Username Mhust Be Present"), Order(3)]
+        [TestCase(TestName = "Username Must Be Present"), Order(3)]
         public void usernameMustPresentTest()
         {
             driver.FindElement(By.CssSelector("#username")).SendKeys("John Smith");
